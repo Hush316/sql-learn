@@ -1,11 +1,4 @@
-## 数据库基础
-
-1. 创建数据库 create database music_db;
-2. 使用数据库 use music_db;
-3. 创建表 create table t_singer(name varchar(10) age int);
-4. 展示表 show tables;
-5. 插入数据 insert into t_singer (name,age) values ('kabuto',30);
-6. 查找数据 select \* from t_singer;
+# 数据库基础
 
 ## SQL 语句
 
@@ -32,21 +25,20 @@
 - DCL(Data Control Language):数据控制语言
   - 对数据库,表格的权限进行相关访问控制操作
 
-## 常见的语句
+## SQL 的数据类型
 
--- 1.查看当前所有的数据库
-SHOW DATABASES;
+**MySql 支持的数据类型有:数据类型,日期和时间类型,字符串(字符和字节)类型,空间和 JSON 数据类型**
 
--- 2.使用某一个数据库
-USE music_db;
+1. 数字类型
 
--- 3.查看目前哪一个数据库是选中状态(就是正在使用的数据库)
-SELECT DATABASE();
+- 整数数字类型:INTEGER,INT,SMALLINT,TINYINT,MEDIUMINT,BIGINT;
+- 浮点数字类型:FLOAT,DOUBLE(FLOAT 是 4 个字节,DOUBLE 是 8 个字节)
+- 精确数字类型:DECIMAL,NUMERIC(DECIMAL 是 NUMERIC 的实现形式)
 
--- 4.创建一个新的数据库
-CREATE DATABASE IF NOT EXISTS test_demo;
+2. 日期类型
 
--- 5.删除某一个数据库
-DROP DATABASE IF EXISTS test_demo;
-
--- 6.修改数据库(了解)
+- YEAR 以 YYYY 格式显示值
+  - 范围 1901 到 2155,和 0000
+- DATE 类型用于具有日期部分但没有时间部分的值
+  - DATE 以格式 YYYY-MMMM-DD 显示值
+  - 支持的范围是'1000-01-01'到'9999-12-31'
