@@ -1,0 +1,25 @@
+{
+  "name": "sql-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hush316/sql-learn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hush316/sql-learn/issues"
+  },
+  "homepage": "https://github.com/Hush316/sql-learn#readme",
+  "dependencies": {
+    "mysql2": "^3.1.2"
+  }
+}
